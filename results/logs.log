@@ -1,0 +1,292 @@
+INFO:root:Intial Time: 03/07/2021 10:23
+INFO:root:     Network: create DATA package from host[0] to destination host[1]
+INFO:root:     Network: host[1] is my neighbour
+INFO:root:     Link: sending package to request controller from host[0]
+INFO:root:     Request Controller: the Host[0] want to send a package, wait is permission to send.
+
+INFO:root:
+  1. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[0] is allowed to start sending
+INFO:root:     Physical: Host[0] sending package to Host[1]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Network: host[1] receive a package from host[0]
+        Message is: Eu gosto de bananas.
+INFO:root:     Network: create DATA package from host[1] to destination host[0]
+INFO:root:     Network: host[0] is my neighbour
+INFO:root:     Link: sending package to request controller from host[1]
+INFO:root:     Request Controller: the Host[1] want to send a package, wait is permission to send.
+
+INFO:root:
+  2. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[1] is allowed to start sending
+INFO:root:     Physical: Host[1] sending package to Host[0]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Network: host[0] receive a package from host[1]
+        Message is: Ela gosta de batatas.
+INFO:root:     Physical: Host[1] sending package to Host[2]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Physical: Host[1] sending package to Host[4]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Network: create DATA package from host[0] to destination host[2]
+INFO:root:     Network: host[0] has no routes to host[2]
+INFO:root:     Network: host[0] is creating a RREQ package to the host[2]
+INFO:root:     Network: host[0] is adding itself to the path
+INFO:root:     Link: sending package to request controller from host[0]
+INFO:root:     Request Controller: the Host[0] want to send a package, wait is permission to send.
+
+INFO:root:
+  3. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[0] is allowed to start sending
+INFO:root:     Physical: Host[0] sending package to Host[1]
+INFO:root:     Link: receive package |RREQ| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREQ| by Link Layer.
+INFO:root:     Network: host[1] I've received a RREQ package, but I'm not the destination host
+INFO:root:     Network: host[1] is sending a RREQ package in broadcast
+INFO:root:     Network: host[1] is adding itself to a path
+INFO:root:     Link: sending package to request controller from host[1]
+INFO:root:     Request Controller: the Host[1] want to send a package, wait is permission to send.
+
+INFO:root:
+  4. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[1] is allowed to start sending
+INFO:root:     Physical: Host[1] sending package to Host[0]
+INFO:root:     Link: receive package |RREQ| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREQ| by Link Layer.
+INFO:root:     Physical: Host[1] sending package to Host[2]
+INFO:root:     Link: receive package |RREQ| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREQ| by Link Layer.
+INFO:root:     Network: host[2] has received a RREQ package, which is the destination
+INFO:root:     Network: host[2] is sending a RREP package to host[0]
+INFO:root:     Link: sending package to request controller from host[2]
+INFO:root:     Request Controller: the Host[2] want to send a package, wait is permission to send.
+
+INFO:root:     Physical: Host[1] sending package to Host[4]
+INFO:root:     Link: receive package |RREQ| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREQ| by Link Layer.
+INFO:root:     Network: host[4] I've received a RREQ package, but I'm not the destination host
+INFO:root:     Network: host[4] is sending a RREQ package in broadcast
+INFO:root:     Network: host[4] is adding itself to a path
+INFO:root:     Link: sending package to request controller from host[4]
+INFO:root:     Request Controller: the Host[4] want to send a package, wait is permission to send.
+
+INFO:root:
+  5. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[2] is allowed to start sending
+INFO:root:     Physical: Host[2] sending package to Host[3]
+INFO:root:     Link: receive package |RREP| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREP| by Link Layer.
+INFO:root:     Physical: Host[2] sending package to Host[1]
+INFO:root:     Link: receive package |RREP| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREP| by Link Layer.
+INFO:root:     Network: host[1] I've received a package from RREP, but I'm not the destination
+INFO:root:     Network: I'm Sending RREP to next Host[0]
+INFO:root:     Link: sending package to request controller from host[1]
+INFO:root:     Request Controller: the Host[1] want to send a package, wait is permission to send.
+
+INFO:root:
+  6. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[4] is allowed to start sending
+INFO:root:     Physical: Host[4] sending package to Host[1]
+INFO:root:     Link: receive package |RREQ| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREQ| by Link Layer.
+INFO:root:
+  7. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[1] is allowed to start sending
+INFO:root:     Physical: Host[1] sending package to Host[0]
+INFO:root:     Link: receive package |RREP| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREP| by Link Layer.
+INFO:root:     Network: host[0] has received a RREP package from the host[2]
+INFO:root:     Network: I am the origin, and I'm sending a DATA package to host[2]
+INFO:root:     Network: I'm Sending DATA to next Host[1]
+INFO:root:     Link: sending package to request controller from host[0]
+INFO:root:     Request Controller: the Host[0] want to send a package, wait is permission to send.
+
+INFO:root:     Physical: Host[1] sending package to Host[2]
+INFO:root:     Link: receive package |RREP| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREP| by Link Layer.
+INFO:root:     Physical: Host[1] sending package to Host[4]
+INFO:root:     Link: receive package |RREP| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREP| by Link Layer.
+INFO:root:
+  8. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[0] is allowed to start sending
+INFO:root:     Physical: Host[0] sending package to Host[1]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Network: host[1] receives a DATA package, but I'm not the destination
+INFO:root:     Network: I'm Sending DATA to next Host[2]
+INFO:root:     Link: sending package to request controller from host[1]
+INFO:root:     Request Controller: the Host[1] want to send a package, wait is permission to send.
+
+INFO:root:
+  9. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[1] is allowed to start sending
+INFO:root:     Physical: Host[1] sending package to Host[0]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Physical: Host[1] sending package to Host[2]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Network: host[2] receive a package from host[0]
+        Message is: Todos gostamos do Zorg.
+INFO:root:     Physical: Host[1] sending package to Host[4]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Network: create DATA package from host[4] to destination host[2]
+INFO:root:     Network: host[4] has no routes to host[2]
+INFO:root:     Network: host[4] is creating a RREQ package to the host[2]
+INFO:root:     Network: host[4] is adding itself to the path
+INFO:root:     Link: sending package to request controller from host[4]
+INFO:root:     Request Controller: the Host[4] want to send a package, wait is permission to send.
+
+INFO:root:
+  10. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[4] is allowed to start sending
+INFO:root:     Physical: Host[4] sending package to Host[1]
+INFO:root:     Link: receive package |RREQ| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREQ| by Link Layer.
+INFO:root:     Network: host[1] I've received a RREQ package, but I'm not the destination host
+INFO:root:     Network: host[1] is sending a RREQ package in broadcast
+INFO:root:     Network: host[1] is adding itself to a path
+INFO:root:     Link: sending package to request controller from host[1]
+INFO:root:     Request Controller: the Host[1] want to send a package, wait is permission to send.
+
+INFO:root:
+  11. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[1] is allowed to start sending
+INFO:root:     Physical: Host[1] sending package to Host[0]
+INFO:root:     Link: receive package |RREQ| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREQ| by Link Layer.
+INFO:root:     Network: host[0] I've received a RREQ package, but I'm not the destination host
+INFO:root:     Network: host[0] is sending a RREQ package in broadcast
+INFO:root:     Network: host[0] is adding itself to a path
+INFO:root:     Link: sending package to request controller from host[0]
+INFO:root:     Request Controller: the Host[0] want to send a package, wait is permission to send.
+
+INFO:root:     Physical: Host[1] sending package to Host[2]
+INFO:root:     Link: receive package |RREQ| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREQ| by Link Layer.
+INFO:root:     Network: host[2] has received a RREQ package, which is the destination
+INFO:root:     Network: host[2] is sending a RREP package to host[4]
+INFO:root:     Link: sending package to request controller from host[2]
+INFO:root:     Request Controller: the Host[2] want to send a package, wait is permission to send.
+
+INFO:root:     Physical: Host[1] sending package to Host[4]
+INFO:root:     Link: receive package |RREQ| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREQ| by Link Layer.
+INFO:root:
+  12. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[0] is allowed to start sending
+INFO:root:     Physical: Host[0] sending package to Host[1]
+INFO:root:     Link: receive package |RREQ| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREQ| by Link Layer.
+INFO:root:
+  13. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[2] is allowed to start sending
+INFO:root:     Physical: Host[2] sending package to Host[3]
+INFO:root:     Link: receive package |RREP| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREP| by Link Layer.
+INFO:root:     Physical: Host[2] sending package to Host[1]
+INFO:root:     Link: receive package |RREP| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREP| by Link Layer.
+INFO:root:     Network: host[1] I've received a package from RREP, but I'm not the destination
+INFO:root:     Network: I'm Sending RREP to next Host[4]
+INFO:root:     Link: sending package to request controller from host[1]
+INFO:root:     Request Controller: the Host[1] want to send a package, wait is permission to send.
+
+INFO:root:
+  14. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[1] is allowed to start sending
+INFO:root:     Physical: Host[1] sending package to Host[0]
+INFO:root:     Link: receive package |RREP| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREP| by Link Layer.
+INFO:root:     Physical: Host[1] sending package to Host[2]
+INFO:root:     Link: receive package |RREP| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREP| by Link Layer.
+INFO:root:     Physical: Host[1] sending package to Host[4]
+INFO:root:     Link: receive package |RREP| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |RREP| by Link Layer.
+INFO:root:     Network: host[4] has received a RREP package from the host[2]
+INFO:root:     Network: I am the origin, and I'm sending a DATA package to host[2]
+INFO:root:     Network: I'm Sending DATA to next Host[1]
+INFO:root:     Link: sending package to request controller from host[4]
+INFO:root:     Request Controller: the Host[4] want to send a package, wait is permission to send.
+
+INFO:root:
+  15. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[4] is allowed to start sending
+INFO:root:     Physical: Host[4] sending package to Host[1]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Network: host[1] receives a DATA package, but I'm not the destination
+INFO:root:     Network: I'm Sending DATA to next Host[2]
+INFO:root:     Link: sending package to request controller from host[1]
+INFO:root:     Request Controller: the Host[1] want to send a package, wait is permission to send.
+
+INFO:root:
+  16. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[1] is allowed to start sending
+INFO:root:     Physical: Host[1] sending package to Host[0]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Physical: Host[1] sending package to Host[2]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Network: host[2] receive a package from host[4]
+        Message is: Man, quanto mais batata melhor, tá ligado?.
+INFO:root:     Physical: Host[1] sending package to Host[4]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Network: create DATA package from host[3] to destination host[2]
+INFO:root:     Network: host[2] is my neighbour
+INFO:root:     Link: sending package to request controller from host[3]
+INFO:root:     Request Controller: the Host[3] want to send a package, wait is permission to send.
+
+INFO:root:
+  17. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[3] is allowed to start sending
+INFO:root:     Physical: Host[3] sending package to Host[2]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Network: host[2] receive a package from host[3]
+        Message is: To.
+INFO:root:     Network: create DATA package from host[0] to destination host[2]
+INFO:root:     Network: host[0] can get into the destination
+INFO:root:     Network: I'm Sending DATA to next Host[1]
+INFO:root:     Link: sending package to request controller from host[0]
+INFO:root:     Request Controller: the Host[0] want to send a package, wait is permission to send.
+
+INFO:root:
+  18. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[0] is allowed to start sending
+INFO:root:     Physical: Host[0] sending package to Host[1]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Network: host[1] receives a DATA package, but I'm not the destination
+INFO:root:     Network: I'm Sending DATA to next Host[2]
+INFO:root:     Link: sending package to request controller from host[1]
+INFO:root:     Request Controller: the Host[1] want to send a package, wait is permission to send.
+
+INFO:root:
+  19. Time Request: 03/07/2021 10:23
+INFO:root:     Request Controller: Host[1] is allowed to start sending
+INFO:root:     Physical: Host[1] sending package to Host[0]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Physical: Host[1] sending package to Host[2]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:     Network: host[2] receive a package from host[0]
+        Message is: Caramba velho, que cadeira chata da porra.
+INFO:root:     Physical: Host[1] sending package to Host[4]
+INFO:root:     Link: receive package |DATA| by Physical Layer and send to Network Layer
+INFO:root:     Network: receive package |DATA| by Link Layer.
+INFO:root:
+
+End Time: 03/07/2021 10:23
+
+
