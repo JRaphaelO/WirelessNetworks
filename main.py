@@ -61,7 +61,7 @@ def main():
 
             time = datetime.now()
             time = time.strftime('%d/%m/%Y %H:%M')
-            log(f'\n  {count}. Time Request: {time}')
+            log(f'  {count}. Time Request: {time}')
 
             master.send_permission()
             count += 1
