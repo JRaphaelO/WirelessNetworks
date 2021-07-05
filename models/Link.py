@@ -16,5 +16,5 @@ class Link:
         self.host.physical.send_package(self.package)
 
     def receive_package_to_physical(self, package):
-        log(f'     Link: receive package |{package.type}| by Physical Layer and send to Network Layer')
+        log(f'     Link: receive package |{package.type}| from Physical Layer and send to Network Layer')
         self.host.network.receive_package(package)
